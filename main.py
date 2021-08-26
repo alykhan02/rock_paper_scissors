@@ -22,7 +22,7 @@ LETTER_FONT = pygame.font.SysFont('courier', 10)
 TITLE_FONT = pygame.font.SysFont('courier', 15)
 SETTINGS_FONT = pygame.font.SysFont('courier', 15)
 
-mixer.music.load('assets/bg_sound.wav')
+#mixer.music.load('assets/bg_sound.wav')
 settings_image = pygame.image.load("assets/rps_settings.png")
 profile_pic = pygame.image.load("assets/selfie.png")
 
@@ -127,10 +127,10 @@ def settings(win):
                             pygame.quit()
                         if (lst_settings[i] == 'Music'):
                             if click:
-                                mixer.music.stop()
+                                #mixer.music.stop()
                                 click = False
                             else:
-                                mixer.music.play(-1)
+                                #mixer.music.play(-1)
                                 click = True
                         if (lst_settings[i] == "Back"):
                             main_menu(win)
